@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clearmargin.com/sitemap.xml
