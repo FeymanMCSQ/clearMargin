@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import CTAButton from "@/components/CTAButton";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           <p>
             ClearMargin turns your Shopify export into a calm, plain-English monthly summary — so you can see what you’re actually making after fees, ads, and refunds.
           </p>
-          <button type="button">Get Early Access – $10/month</button>
+          <CTAButton>Get Early Access – $10/month</CTAButton>
           <p className="microcopy">
             No dashboards. No complexity. Just truth.
           </p>
@@ -117,7 +118,7 @@ export default function Home() {
         <section id="pricing" className="pricing">
           <h2>Simple Access.</h2>
           <p>ClearMargin costs $10 per month. No contracts. Cancel anytime.</p>
-          <button type="button">Get Early Access</button>
+          <CTAButton>Get Early Access</CTAButton>
         </section>
 
         {/* 7) FOOTER */}

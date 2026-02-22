@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -46,6 +47,18 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         {children}
+        <Script
+          src="https://assets.mailerlite.com/js/universal.js"
+          strategy="afterInteractive"
+        />
+        <Script id="mailerlite-init" strategy="afterInteractive">
+          {`
+            (function(w){
+              w.ml = w.ml || function(){(w.ml.q = w.ml.q || []).push(arguments);};
+            })(window);
+            ml('account', '2129120');
+          `}
+        </Script>
       </body>
     </html>
   );

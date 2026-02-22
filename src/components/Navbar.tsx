@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CTAButton from "@/components/CTAButton";
 
 export default function Navbar() {
     return (
@@ -13,7 +14,7 @@ export default function Navbar() {
                     />
                     <span>ClearMargin</span>
                 </div>
-                <button type="button" style={{ padding: '8px 16px', fontSize: '14px' }}>Get Access</button>
+                <CTAButton style={{ padding: '8px 16px', fontSize: '14px' }}>Get Access</CTAButton>
             </div>
         </nav>
     );
