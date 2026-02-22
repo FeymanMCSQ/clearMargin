@@ -272,7 +272,7 @@ section {
 
 .pricing {
   text-align: center;
-  padding-bottom: 160px;
+  padding-bottom: 80px;
 }
 
 .pricing h2 {
@@ -288,6 +288,26 @@ section {
 .pricing button {
   font-size: 20px;
   padding: 18px 40px;
+}
+
+.signup-section {
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.signup-section h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.signup-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.signup-section .ml-embedded {
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 footer {

@@ -1,11 +1,5 @@
 "use client";
 
-declare global {
-  interface Window {
-    ml?: (...args: unknown[]) => void;
-  }
-}
-
 interface CTAButtonProps {
   children: React.ReactNode;
   className?: string;
@@ -14,8 +8,9 @@ interface CTAButtonProps {
 
 export default function CTAButton({ children, className, style }: CTAButtonProps) {
   const handleClick = () => {
-    if (typeof window !== "undefined" && window.ml) {
-      window.ml("show");
+    const el = document.getElementById("signup");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -30,3 +25,4 @@ export default function CTAButton({ children, className, style }: CTAButtonProps
     </button>
   );
 }
+

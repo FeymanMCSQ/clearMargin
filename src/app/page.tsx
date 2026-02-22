@@ -121,7 +121,14 @@ export default function Home() {
           <CTAButton>Get Early Access</CTAButton>
         </section>
 
-        {/* 7) FOOTER */}
+        {/* 7) SIGNUP FORM */}
+        <section id="signup" className="signup-section">
+          <h2>Join the waitlist.</h2>
+          <p>Be the first to get access when we launch.</p>
+          <div className="ml-embedded" data-form="qnPqiL"></div>
+        </section>
+
+        {/* 8) FOOTER */}
         <footer>
           <p className="contact">hello@clearmargin.com</p>
           <p className="copyright">© {new Date().getFullYear()} ClearMargin. Financial Clarity, Simplified.</p>
